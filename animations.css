@@ -1,0 +1,87 @@
+/* Flip Animations and Transitions */
+
+@keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes flip-reverse {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+.flashcard {
+    animation: none;
+}
+
+.flashcard.flipping {
+    animation: flip 0.6s ease-in-out;
+}
+
+.flashcard.flipping-reverse {
+    animation: flip-reverse 0.6s ease-in-out;
+}
+
+/* Fade transitions for view switching */
+.view {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button press animation */
+.control-btn:active,
+.nav-btn:active,
+.answer-btn:active {
+    transform: scale(0.95);
+}
+
+/* Feedback animation */
+.feedback {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card entrance animation */
+.flashcard {
+    animation: cardEntrance 0.5s ease-out;
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
