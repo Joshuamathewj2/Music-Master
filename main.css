@@ -68,7 +68,7 @@ header {
 }
 
 header::before {
-    content: "🎹 𝄡 𝄡 𝄡 𝄡 𝄡 𝄡 𝄡 ♬";
+    content: "🎹 ✦ ✦ ✦ ✦ ✦ ✦ \00A0 ♬";
     position: absolute;
     top: 10px;
     left: 5%;
@@ -79,11 +79,11 @@ header::before {
 }
 
 header::after {
-    content: "♪";
+    content: "𝄡Jo𝄞hua";
     position: absolute;
-    bottom: -10px;
+    bottom: -20px;
     right: 8%;
-    font-size: 100px;
+    font-size: 35px;
     color: rgba(255, 255, 255, 0.1);
     pointer-events: none;
 }
@@ -304,4 +304,5 @@ body::before {
     pointer-events: none;
     line-height: 1;
 }
+
 
